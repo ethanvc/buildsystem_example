@@ -1,0 +1,8 @@
+# 默认开启C++17标准, 这个是对应于VC++编译器的命令行参数
+# gcc和msvc是通过命令行参数--config传递进来的, 这里build:xx有一个基本的条件判断功能
+build:gcc --cxxopt=-std=c++17
+build:msvc --cxxopt=/std:c++17
+
+build:clang_config --crosstool_top=//toolchain:clang_suite
+
+build --verbose_failures

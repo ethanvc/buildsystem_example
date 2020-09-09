@@ -1,0 +1,1 @@
+add_library(ipc STATIC ipc.h ipc.cpp)
